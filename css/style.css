@@ -1,4 +1,10 @@
 @font-face {
+    font-family: 'Inter';
+    font-weight: 500;
+    src: url(/fonts/Inter-Medium.woff);
+}
+
+@font-face {
     font-family: 'Manrope';
     font-weight: 400;
     src: url(/fonts/Manrope-Regular.woff);
@@ -32,8 +38,12 @@
     font-family: 'Manrope';
 }
 
+html {
+    overflow-x: hidden
+}
+
 header {
-    background-image: url(/title.jpg);
+    background-image: url(/image/title.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -43,6 +53,10 @@ header {
     justify-content: space-between;
     padding-bottom: 60px;
     margin-bottom: 10vh;
+}
+
+.logo {
+    max-width: 16vw;
 }
 
 .top-bar {
@@ -68,15 +82,15 @@ header {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
-    font-size: 1.1vw;
+    font-size: 18px;
     line-height: 145%;
     color: #FFFFFF;
 }
 
 .location::before {
-    content: url(/location.svg);
-    width: 100%;
-    height: 100%;
+    content: url(/image/location.svg);
+    width: 1vw;
+    height: 1vw;
     position: absolute;
     left: -32px;
     top: 5px;
@@ -87,11 +101,10 @@ header {
 }
 
 .btn-block {
-    width: 13vw;
-    height: 5vw;
+    padding: 24px 47px;
     position: relative;
     z-index: 2;
-    background: url(/button.png);
+    background: url(/image/button.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -101,7 +114,6 @@ header {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
-    font-size: 0.9vw;
     line-height: 1.2;
     text-align: center;
     color: #333333;
@@ -111,7 +123,6 @@ h1 {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 800;
-    font-size: 4.6vw;
     line-height: 100%;
     letter-spacing: -0.02em;
     color: #FFFFFF;
@@ -126,7 +137,6 @@ h1 {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
-    font-size: 1.9vw;
     line-height: 130%;
     color: #FFFFFF;
 }
@@ -166,7 +176,6 @@ section {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 800;
-    font-size: 3vw;
     line-height: 110%;
     /* or 62px */
     text-align: center;
@@ -180,7 +189,7 @@ section {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
-    font-size: 2vw;
+    font-size: 35px;
     line-height: 105%;
     /* or 31px */
     /* черный */
@@ -213,17 +222,17 @@ section {
 }
 
 .task-card-1 {
-    background-image: url(/card.png);
+    background-image: url(/image/card.png);
     padding: 43px 39px 51px 47px;
 }
 
 .task-card-2 {
-    background-image: url(/card-2.png);
+    background-image: url(/image/card-2.png);
     padding: 43px 39px 51px 47px;
 }
 
 .task-card-3 {
-    background-image: url(/card-3.png);
+    background-image: url(/image/card-3.png);
     padding: 43px 39px 51px 47px;
 }
 
@@ -303,18 +312,21 @@ section {
     height: 100%;
 }
 
-.slick-slide {
-    margin: 0 20px;
-}
 
-.slick-list .draggable {
+/* .slick-slide {
+    margin: 0 20px;
+} */
+
+
+/* .slick-list .draggable {
     margin: 0 -20;
-}
+} */
 
 .format-card {
     display: flex;
     flex-direction: column;
     height: 100%;
+    justify-content: center;
 }
 
 .format-card img {
@@ -330,8 +342,18 @@ section {
 }
 
 .form-btn-1 {
-    background-image: url(/form-btn.png);
+    background-image: url(/image/form-btn.png);
 }
+
+.form-btn-2 {
+    background-image: url(/image/button-red.png);
+}
+
+.form-btn-3 {
+    background-image: url(/image/button-yellow.png);
+}
+
+.network-row {}
 
 .prev,
 .next {
@@ -355,9 +377,14 @@ section {
     content: "";
     width: 100%;
     border-top: 1px solid #CDCDCD;
-    top: 8vw;
+    top: -1vw;
     height: 60px;
     border-left: 1px solid #CDCDCD;
+}
+
+.work-line-3 {
+    height: 0;
+    top: 35vw;
 }
 
 .invite-img-con {
@@ -377,7 +404,6 @@ section {
 .mentor-card {
     border: 1px solid #CDCDCD;
     padding: 40px 35px;
-    height: 50%;
     text-align: center;
 }
 
@@ -406,4 +432,100 @@ section {
     /* черный */
     color: #333333;
     margin-bottom: 10px;
+}
+
+.invite-formate-slider .prev,
+.invite-formate-slider .next {
+    bottom: -85%;
+}
+
+.invite-formate-slider .prev {
+    right: 30%;
+}
+
+.invite-formate-slider .next {
+    right: 5%;
+}
+
+.info-about-event span {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 105%;
+    color: #959595;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.info-event {
+    margin-bottom: 35px;
+}
+
+.info-about-event h3 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 105%;
+    /* or 31px */
+    letter-spacing: -0.01em;
+    /* черный */
+    color: #333333;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #E3E3E3;
+}
+
+.info-about-event p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 125%;
+    /* or 26px */
+    /* черный */
+    color: #333333;
+}
+
+.info-about-event {
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    height: 100%;
+}
+
+.event-container {
+    border: 1px solid #CDCDCD;
+    margin-bottom: 30px;
+}
+
+.events__title {
+    margin-bottom: 35px;
+}
+
+.event-data {
+    border: 1px solid #4181FF;
+    border-radius: 32px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 105%;
+    color: #4181FF;
+    padding: 12px 20px;
+    max-width: 125px;
+    text-align: center;
+}
+
+.info-about-event .info-event:nth-child(3) {
+    flex: 1 1 auto;
+}
+
+.video-part {
+    max-width: 100%;
+}
+
+.video-part img {
+    height: 100%;
+    width: 100%;
 }
