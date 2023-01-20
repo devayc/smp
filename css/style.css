@@ -55,10 +55,6 @@ header {
     margin-bottom: 10vh;
 }
 
-.logo {
-    max-width: 16vw;
-}
-
 .top-bar {
     padding: 1% 5%;
     position: relative;
@@ -85,15 +81,15 @@ header {
     font-size: 18px;
     line-height: 145%;
     color: #FFFFFF;
+    position: relative;
 }
 
-.location::before {
+.location span::before {
     content: url(/image/location.svg);
     width: 1vw;
     height: 1vw;
     position: absolute;
-    left: -32px;
-    top: 5px;
+    left: -29px;
 }
 
 .btn-part {
@@ -101,7 +97,8 @@ header {
 }
 
 .btn-block {
-    padding: 24px 47px;
+    padding: 10% 13%;
+    font-size: clamp(14px, 1vw, 36px);
     position: relative;
     z-index: 2;
     background: url(/image/button.png);
@@ -127,10 +124,12 @@ h1 {
     letter-spacing: -0.02em;
     color: #FFFFFF;
     margin-bottom: 4%;
+    font-size: clamp(30px, 4vw, 148px)
 }
 
 .logo {
     width: 100%;
+    max-width: 250px;
 }
 
 .sub-title {
@@ -139,6 +138,7 @@ h1 {
     font-weight: 400;
     line-height: 130%;
     color: #FFFFFF;
+    font-size: clamp(18px, 2vw, 60px)
 }
 
 .header-content {
@@ -177,7 +177,7 @@ section {
     font-style: normal;
     font-weight: 800;
     line-height: 110%;
-    /* or 62px */
+    font-size: clamp(32px, 3vw, 90px);
     text-align: center;
     letter-spacing: -0.02em;
     /* черный */
@@ -189,7 +189,7 @@ section {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
-    font-size: 35px;
+    font-size: clamp(23px, 2vw, 70px);
     line-height: 105%;
     /* or 31px */
     /* черный */
@@ -201,9 +201,9 @@ section {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
-    font-size: 1.07vw;
     line-height: 140%;
     color: #333333;
+    font-size: clamp(14px, 1vw, 33px);
 }
 
 .task-card {
@@ -215,6 +215,7 @@ section {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center center;
+    padding: 9% 7% 9% 7%;
 }
 
 .task-card img {
@@ -223,17 +224,14 @@ section {
 
 .task-card-1 {
     background-image: url(/image/card.png);
-    padding: 43px 39px 51px 47px;
 }
 
 .task-card-2 {
     background-image: url(/image/card-2.png);
-    padding: 43px 39px 51px 47px;
 }
 
 .task-card-3 {
     background-image: url(/image/card-3.png);
-    padding: 43px 39px 51px 47px;
 }
 
 .task-title {
@@ -244,11 +242,23 @@ section {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 500;
-    font-size: 22px;
+    font-size: clamp(20px, 1vw, 37px);
     line-height: 130%;
     text-align: center;
     color: #333333;
     flex: 1 1 auto;
+    margin-bottom: 30px;
+    padding-top: 50px;
+}
+
+.line-conent {
+    border-top: 1px solid #CDCDCD;
+}
+
+.line {
+    border-left: 1px solid #CDCDCD;
+    border-right: 1px solid #CDCDCD;
+    ;
 }
 
 .connect-card {
@@ -327,6 +337,7 @@ section {
     flex-direction: column;
     height: 100%;
     justify-content: center;
+    align-items: flex-start;
 }
 
 .format-card img {
@@ -351,6 +362,12 @@ section {
 
 .form-btn-3 {
     background-image: url(/image/button-yellow.png);
+}
+
+.form-btn-3,
+.form-btn-2,
+.form-btn-1 {
+    padding: 6% 7%;
 }
 
 .network-row {}
@@ -405,6 +422,17 @@ section {
     border: 1px solid #CDCDCD;
     padding: 40px 35px;
     text-align: center;
+    border: 1px solid #CDCDCD;
+    padding: 40px 35px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mentorSlider .prev,
+#mentorSlider .next {
+    bottom: -16vw
 }
 
 .mentor-avatar {
@@ -529,3 +557,104 @@ section {
     height: 100%;
     width: 100%;
 }
+
+.slider-mob {
+    display: none;
+}
+
+.slider-pc {
+    display: block;
+}
+
+@media(max-width:1200px) {
+    .work-line {
+        top: -47px;
+        height: 30px;
+    }
+    .work-format__sub-title {
+        margin-bottom: 80px;
+    }
+    .format-card {
+        align-items: unset;
+    }
+    .slide img {
+        width: 100%;
+    }
+    .location {
+        margin-top: 20px;
+    }
+    .line {
+        border-left: none;
+        border-right: none;
+        border-top: 1;
+    }
+    .line-mb {
+        border-top: 1px solid #CDCDCD;
+    }
+    .connect-card {
+        margin-bottom: 40px;
+    }
+    .slider-mob {
+        display: block;
+    }
+    .slider-pc {
+        display: none;
+    }
+    .slider-mob .next,
+    .slider-mob .prev {
+        top: 36%;
+        width: 30px;
+        height: 30px;
+    }
+    .slider-mob .next {
+        right: 2%;
+    }
+    .slider-mob .prev {
+        left: 2%;
+    }
+}
+
+@media(max-width:768px) {
+    .img-block {
+        min-width: 78px;
+        min-height: 78px;
+    }
+    .img-block:not(:last-child) img {
+        width: 78px;
+        height: 78px;
+    }
+    .location span {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .header-content__left-part {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:576px) {
+    .task-title {
+        font-size: 24px;
+    }
+}
+
+
+/*                                                                                   */
+
+
+/*                                                                                   */
+
+
+/* ВЫПРАВИ ШРИФТЫ ПОСТАВЬ НОРМАЛЬНЫЕ COL И ДОБАВЬ КОНТЕЙНЕРЫ......................  */
+
+
+/*                                                               */
+
+
+/*                                                                */
+
+
+/*  */
+
+
+/*  */
