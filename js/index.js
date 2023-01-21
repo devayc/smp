@@ -33,6 +33,7 @@ $(document).ready(function() {
         $('#secondSlider').slick({
             slidesToShow: 1,
             heigth: 100,
+            asNavFor: "#mentorSlider",
 
 
         });
@@ -55,9 +56,9 @@ $(document).ready(function() {
     } else {
         $('#mentorMobileSlider').slick({
             slidesToShow: 1,
-            prevArrow: "<img src='/image/left.svg' class='prev' alt='1'>",
-            nextArrow: "<img src='/image/right.svg' class='next' alt='2'>",
-            heigth: 20
+            // prevArrow: "<img src='/image/left.svg' class='prev' alt='1'>",
+            // nextArrow: "<img src='/image/right.svg' class='next' alt='2'>",
+            asNavFor: "#secondMobileSlider",
         });
     }
 
@@ -66,6 +67,48 @@ $(document).ready(function() {
         check('#firstSlider', '#firstMobileSlider')
         check('#thredSlider', '#thredMobileSlider')
 
+        if (($(window).width() > 1200)) {
+            if (!$('#mentorSlider').hasClass('slick-initialized')) {
+                $('mentorSlider').slick({
+                    slidesToShow: 1,
+                    prevArrow: "<img src='/image/left.svg' class='prev' alt='1'>",
+                    nextArrow: "<img src='/image/right.svg' class='next' alt='2'>",
+                    heigth: 100,
+                    asNavFor: "#secondSlider",
+                });
+            }
+    
+        } else {
+            if (!$('#mentorMobileSlider').hasClass('slick-initialized')) {
+                $('#mentorMobileSlider').slick({
+                    slidesToShow: 1,
+                    heigth: 100,
+                    asNavFor: "#secondMobileSlider",
+                });
+            }
+    
+        }
+        if (($(window).width() > 1200)) {
+            if (!$('#secondSlider').hasClass('slick-initialized')) {
+                $('#secondSlider').slick({
+                    slidesToShow: 1,
+                    heigth: 100,
+                    asNavFor: "#mentorSlider",
+                });
+            }
+    
+        } else {
+            if (!$('#secondMobileSlider').hasClass('slick-initialized')) {
+                $('#secondMobileSlider').slick({
+                    slidesToShow: 1,
+                    heigth: 100,
+                    prevArrow: "<img src='/image/left.svg' class='prev' alt='1'>",
+                    nextArrow: "<img src='/image/right.svg' class='next' alt='2'>",
+                    asNavFor: "#mentorMobileSlider",
+                });
+            }
+    
+        }
 
     });
 
@@ -79,7 +122,7 @@ $(document).ready(function() {
                     heigth: 100
                 });
             }
-
+    
         } else {
             if (!$(nameMob).hasClass('slick-initialized')) {
                 $(nameMob).slick({
@@ -89,7 +132,7 @@ $(document).ready(function() {
                     heigth: 100
                 });
             }
-
+    
         }
     }
 });

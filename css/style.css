@@ -612,6 +612,19 @@ section {
     .slider-mob .prev {
         left: 2%;
     }
+    .mentor-card{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .format-card img{
+        margin-bottom: 0;
+    }
+    .mentor-card-txt{
+        display: flex;
+        flex-direction: column;
+
+    }
 }
 
 @media(max-width:768px) {
