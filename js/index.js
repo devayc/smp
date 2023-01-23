@@ -2,30 +2,30 @@ $(document).ready(function() {
     if ($(window).width() > 1200) {
         $('#firstSlider').slick({
             slidesToShow: 1,
-            prevArrow: "<img src='../image/left.svg' class='prev' alt='1'>",
-            nextArrow: "<img src='../image/right.svg' class='next' alt='2'>",
+            prevArrow: "<img src='./image/left.svg' class='prev' alt='1'>",
+            nextArrow: "<img src='./image/right.svg' class='next' alt='2'>",
             heigth: 100
         });
     } else {
         $('#firstMobileSlider').slick({
             slidesToShow: 1,
-            prevArrow: "<img src='../image/left.svg' class='prev' alt='1'>",
-            nextArrow: "<img src='../image/right.svg' class='next' alt='2'>",
+            prevArrow: "<img src='./image/left.svg' class='prev' alt='1'>",
+            nextArrow: "<img src='./image/right.svg' class='next' alt='2'>",
             heigth: 20
         });
     }
     if ($(window).width() > 1200) {
         $('#thredSlider').slick({
             slidesToShow: 1,
-            prevArrow: "<img src='../image/left.svg' class='prev' alt='1'>",
-            nextArrow: "<img src='../image/right.svg' class='next' alt='2'>",
+            prevArrow: "<img src='./image/left.svg' class='prev' alt='1'>",
+            nextArrow: "<img src='./image/right.svg' class='next' alt='2'>",
             heigth: 100
         });
     } else {
         $('#thredMobileSlider').slick({
             slidesToShow: 1,
-            prevArrow: "<img src='../image/left.svg' class='prev' alt='1'>",
-            nextArrow: "<img src='../image/right.svg' class='next' alt='2'>",
+            prevArrow: "<img src='./image/left.svg' class='prev' alt='1'>",
+            nextArrow: "<img src='./image/right.svg' class='next' alt='2'>",
             heigth: 20
         });
     }
@@ -33,8 +33,8 @@ $(document).ready(function() {
         $('#secondSlider').slick({
             slidesToShow: 1,
             heigth: 100,
-            prevArrow: "<img src='../image/left.svg' class='prev' alt='1'>",
-            nextArrow: "<img src='../image/right.svg' class='next' alt='2'>",
+            prevArrow: "<img src='./image/left.svg' class='prev' alt='1'>",
+            nextArrow: "<img src='./image/right.svg' class='next' alt='2'>",
             asNavFor: "#mentorSlider",
 
 
@@ -42,8 +42,8 @@ $(document).ready(function() {
     } else {
         $('#secondMobileSlider').slick({
             slidesToShow: 1,
-            prevArrow: "<img src='../image/left.svg' class='prev' alt='1'>",
-            nextArrow: "<img src='../image/right.svg' class='next' alt='2'>",
+            prevArrow: "<img src='./image/left.svg' class='prev' alt='1'>",
+            nextArrow: "<img src='./image/right.svg' class='next' alt='2'>",
             heigth: 20
         });
     }
@@ -57,27 +57,27 @@ $(document).ready(function() {
     } else {
         $('#mentorMobileSlider').slick({
             slidesToShow: 1,
-            // prevArrow: "<img src='../image/left.svg' class='prev' alt='1'>",
-            // nextArrow: "<img src='../image/right.svg' class='next' alt='2'>",
+            // prevArrow: "<img src='./image/left.svg' class='prev' alt='1'>",
+            // nextArrow: "<img src='./image/right.svg' class='next' alt='2'>",
             asNavFor: "#secondMobileSlider",
         });
     }
     $('#firstEventSlider').slick({
         slidesToShow: 1,
-        prevArrow: "<img src='../image/left.svg' class='prev' alt='1'>",
-        nextArrow: "<img src='../image/right.svg' class='next' alt='2'>",
+        prevArrow: "<img src='./image/left.svg' class='prev' alt='1'>",
+        nextArrow: "<img src='./image/right.svg' class='next' alt='2'>",
         heigth: 100
     });
     $('#secondEventSlider').slick({
         slidesToShow: 1,
-        prevArrow: "<img src='../image/left.svg' class='prev' alt='1'>",
-        nextArrow: "<img src='../image/right.svg' class='next' alt='2'>",
+        prevArrow: "<img src='./image/left.svg' class='prev' alt='1'>",
+        nextArrow: "<img src='./image/right.svg' class='next' alt='2'>",
         heigth: 100
     });
     $('#thredEventSlider').slick({
         slidesToShow: 1,
-        prevArrow: "<img src='../image/left.svg' class='prev' alt='1'>",
-        nextArrow: "<img src='../image/right.svg' class='next' alt='2'>",
+        prevArrow: "<img src='./image/left.svg' class='prev' alt='1'>",
+        nextArrow: "<img src='./image/right.svg' class='next' alt='2'>",
         heigth: 100
     });
 
@@ -90,8 +90,8 @@ $(document).ready(function() {
             if (!$('#mentorSlider').hasClass('slick-initialized')) {
                 $('mentorSlider').slick({
                     slidesToShow: 1,
-                    prevArrow: "<img src='../image/left.svg' class='prev' alt='1'>",
-                    nextArrow: "<img src='../image/right.svg' class='next' alt='2'>",
+                    prevArrow: "<img src='./image/left.svg' class='prev' alt='1'>",
+                    nextArrow: "<img src='./image/right.svg' class='next' alt='2'>",
                     heigth: 100,
                     asNavFor: "#secondSlider",
                 });
@@ -121,8 +121,8 @@ $(document).ready(function() {
                 $('#secondMobileSlider').slick({
                     slidesToShow: 1,
                     heigth: 100,
-                    prevArrow: "<img src='../image/left.svg' class='prev' alt='1'>",
-                    nextArrow: "<img src='../image/right.svg' class='next' alt='2'>",
+                    prevArrow: "<img src='./image/left.svg' class='prev' alt='1'>",
+                    nextArrow: "<img src='./image/right.svg' class='next' alt='2'>",
                     asNavFor: "#mentorMobileSlider",
                 });
             }
@@ -136,8 +136,8 @@ $(document).ready(function() {
             if (!$(name).hasClass('slick-initialized')) {
                 $(name).slick({
                     slidesToShow: 1,
-                    prevArrow: "<img src='../image/left.svg' class='prev' alt='1'>",
-                    nextArrow: "<img src='../image/right.svg' class='next' alt='2'>",
+                    prevArrow: "<img src='./image/left.svg' class='prev' alt='1'>",
+                    nextArrow: "<img src='./image/right.svg' class='next' alt='2'>",
                     heigth: 100
                 });
             }
@@ -146,8 +146,8 @@ $(document).ready(function() {
             if (!$(nameMob).hasClass('slick-initialized')) {
                 $(nameMob).slick({
                     slidesToShow: 1,
-                    prevArrow: "<img src='../image/left.svg' class='prev' alt='1'>",
-                    nextArrow: "<img src='../image/right.svg' class='next' alt='2'>",
+                    prevArrow: "<img src='./image/left.svg' class='prev' alt='1'>",
+                    nextArrow: "<img src='./image/right.svg' class='next' alt='2'>",
                     heigth: 100
                 });
             }
@@ -169,8 +169,8 @@ $(document).ready(function() {
 //     slidesToShow: 1,
 //     asNavFor: "#slider",
 
-//     prevArrow: "<img src='../image/left.svg' class='prev' alt='1'>",
-//     nextArrow: "<img src='../image/right.svg' class='next' alt='2'>",
+//     prevArrow: "<img src='./image/left.svg' class='prev' alt='1'>",
+//     nextArrow: "<img src='./image/right.svg' class='next' alt='2'>",
 
 // });
 
@@ -179,8 +179,8 @@ $(document).ready(function() {
 //     if (!$('#thredSlider').hasClass('slick-initialized')) {
 //         $('#thredSlider').slick({
 //             slidesToShow: 1,
-//             prevArrow: "<img src='../image/left.svg' class='prev' alt='1'>",
-//             nextArrow: "<img src='../image/right.svg' class='next' alt='2'>",
+//             prevArrow: "<img src='./image/left.svg' class='prev' alt='1'>",
+//             nextArrow: "<img src='./image/right.svg' class='next' alt='2'>",
 //             heigth: 100
 //         });
 //     }
@@ -189,8 +189,8 @@ $(document).ready(function() {
 //     if (!$('#thredMobileSlider').hasClass('slick-initialized')) {
 //         $('#thredMobileSlider').slick({
 //             slidesToShow: 1,
-//             prevArrow: "<img src='../image/left.svg' class='prev' alt='1'>",
-//             nextArrow: "<img src='../image/right.svg' class='next' alt='2'>",
+//             prevArrow: "<img src='./image/left.svg' class='prev' alt='1'>",
+//             nextArrow: "<img src='./image/right.svg' class='next' alt='2'>",
 //             heigth: 100
 //         });
 //     }
