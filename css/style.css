@@ -1,37 +1,37 @@
     @font-face {
         font-family: 'Inter';
         font-weight: 500;
-        src: url(/fonts/Inter-Medium.woff);
+        src: url(../fonts/Inter-Medium.woff);
     }
     
     @font-face {
         font-family: 'Manrope';
         font-weight: 400;
-        src: url(/fonts/Manrope-Regular.woff);
+        src: url(../fonts/Manrope-Regular.woff);
     }
     
     @font-face {
         font-family: 'Manrope';
         font-weight: 700;
-        src: url(/fonts/Manrope-Bold.woff);
+        src: url(../fonts/Manrope-Bold.woff);
     }
     
     @font-face {
         font-family: 'Manrope';
         font-weight: 800;
-        src: url(/fonts/Manrope-ExtraBold.woff);
+        src: url(../fonts/Manrope-ExtraBold.woff);
     }
     
     @font-face {
         font-family: 'Manrope';
         font-weight: 500;
-        src: url(/fonts/Manrope-Medium.woff);
+        src: url(../fonts/Manrope-Medium.woff);
     }
     
     @font-face {
         font-family: 'Manrope';
         font-weight: 600;
-        src: url(/fonts/Manrope-Semibold.woff);
+        src: url(../fonts/Manrope-Semibold.woff);
     }
     
     * {
@@ -43,7 +43,7 @@
     }
     
     header {
-        background-image: url(/image/title.jpg);
+        background-image: url(../image/title.jpg);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -85,7 +85,7 @@
     }
     
     .location span::before {
-        content: url(/image/location.svg);
+        content: url(../image/location.svg);
         width: 1vw;
         height: 1vw;
         position: absolute;
@@ -101,7 +101,7 @@
         font-size: clamp(14px, 1vw, 36px);
         position: relative;
         z-index: 2;
-        background: url(/image/button.png);
+        background: url(../image/button.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center center;
@@ -223,15 +223,15 @@
     }
     
     .task-card-1 {
-        background-image: url(/image/card.png);
+        background-image: url(../image/card.png);
     }
     
     .task-card-2 {
-        background-image: url(/image/card-2.png);
+        background-image: url(../image/card-2.png);
     }
     
     .task-card-3 {
-        background-image: url(/image/card-3.png);
+        background-image: url(../image/card-3.png);
     }
     
     .task-title {
@@ -347,15 +347,15 @@
     }
     
     .form-btn-1 {
-        background-image: url(/image/form-btn.png);
+        background-image: url(../image/form-btn.png);
     }
     
     .form-btn-2 {
-        background-image: url(/image/button-red.png);
+        background-image: url(../image/button-red.png);
     }
     
     .form-btn-3 {
-        background-image: url(/image/button-yellow.png);
+        background-image: url(../image/button-yellow.png);
     }
     
     .form-btn-3,
@@ -588,7 +588,7 @@
     }
     
     .anons-back {
-        background-image: url(/image/anouns.png);
+        background-image: url(../image/anouns.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -652,9 +652,9 @@
     }
     
     @media(max-width:1199px) {
-        .grey-con {
+        /* .grey-con {
             padding: 0;
-        }
+        } */
         .work-formate-slider .prev,
         .work-formate-slider .next {
             top: 50%;
@@ -752,6 +752,9 @@
     }
     
     @media(max-width:576px) {
+        .grey-con {
+            padding-bottom: 0;
+        }
         .task-title {
             font-size: 24px;
         }
