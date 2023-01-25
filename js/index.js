@@ -213,6 +213,8 @@ $(document).ready(function() {
     let block_show8 = null;
     let block_show9 = null
     let block_show10 = null
+    let block_show11 = null
+    let block_show12 = null
     $(window).scroll(function(event) {
         event.preventDefault()
         scrollTracking('#tast');
@@ -225,6 +227,9 @@ $(document).ready(function() {
         scrollTracking8('#events')
         scrollTracking9('#anons')
         scrollTracking10('#footer')
+        scrollTracking11('#partner')
+        scrollTracking12('#footer')
+        scrollTracking12('#sovet')
     });
     // анимация главного экрана 
     $('header').animate({ opacity: 1 }, 1000);
@@ -518,6 +523,42 @@ $(document).ready(function() {
                     $('#footer .anons-card').slideDown();
                 }, 1000)
                 block_show10 = true;
+            }
+
+        }
+
+    }
+
+    function scrollTracking11(lk) {
+        let wt = $(window).scrollTop();
+        let wh = $(window).height();
+        let et = $(lk).offset().top;
+        let eh = $(lk).outerHeight();
+
+        if (wt + wh >= et && wt + wh - eh * 2 <= et + (wh - eh)) {
+            if (block_show11 == null || block_show11 == false) {
+                console.log('Блок active в области видимости');
+                $(lk).animate({ opacity: 1, }, 1000);
+                $(lk).css({ "-webkit-transform": "translate(0, 0px)" });
+                block_show11 = true;
+            }
+
+        }
+
+    }
+
+    function scrollTracking12(lk) {
+        let wt = $(window).scrollTop();
+        let wh = $(window).height();
+        let et = $(lk).offset().top;
+        let eh = $(lk).outerHeight();
+
+        if (wt + wh >= et && wt + wh - eh * 2 <= et + (wh - eh)) {
+            if (block_show12 == null || block_show12 == false) {
+                console.log('Блок active в области видимости');
+                $(lk).animate({ opacity: 1, }, 1000);
+                $(lk).css({ "-webkit-transform": "translate(0, 0px)" });
+                block_show12 = true;
             }
 
         }
