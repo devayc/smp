@@ -410,6 +410,21 @@ section {
     color: #FFFFFF;
 }
 
+.part-lemenent {
+    padding: 120px 204px;
+}
+
+#sovet,
+#partner {
+    opacity: 0;
+    transition: all 2s;
+}
+
+.sovet h2,
+.our-partners h2 {
+    margin: 50px;
+}
+
 .header-content__left-part {
     display: none;
 }
