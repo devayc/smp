@@ -71,8 +71,6 @@ $(document).ready(function() {
             </svg>
             `,
             asNavFor: "#mentorSlider",
-
-
         });
     } else {
         $('#secondMobileSlider').slick({
