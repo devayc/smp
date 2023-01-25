@@ -85,6 +85,7 @@ $(document).ready(function() {
             <path d="M23 19L29 25L23 31" stroke="#333333" stroke-width="2"/>
             </svg>
             `,
+            asNavFor: "#mentorMobileSlider",
             heigth: 20
         });
     }
@@ -98,7 +99,7 @@ $(document).ready(function() {
     } else {
         $('#mentorMobileSlider').slick({
             slidesToShow: 1,
-
+            asNavFor: "#secondMobileSlider",
         });
     }
     $('#firstEventSlider').slick({
