@@ -3,11 +3,11 @@ $(document).ready(function() {
     if ($(window).width() > 1200) {
         $('#firstSlider').slick({
             slidesToShow: 1,
-            prevArrow: `<svg class="prev" width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            prevArrow: `<svg class="prev" width="55" height="55" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="25" cy="25" r="24.5" fill="white" stroke="#E3E3E3"/>
             <path d="M27 19L21 25L27 31" stroke="#333333" stroke-width="2"/>
             </svg>`,
-            nextArrow: `<svg class="next" width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            nextArrow: `<svg class="next" width="55" height="55" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle r="24.5" transform="matrix(-1 0 0 1 25 25)" fill="white" stroke="#E3E3E3"/>
             <path d="M23 19L29 25L23 31" stroke="#333333" stroke-width="2"/>
             </svg>
@@ -17,11 +17,11 @@ $(document).ready(function() {
     } else {
         $('#firstMobileSlider').slick({
             slidesToShow: 1,
-            prevArrow: `<svg class="prev" width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            prevArrow: `<svg class="prev" width="55" height="55" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="25" cy="25" r="24.5" fill="white" stroke="#E3E3E3"/>
             <path d="M27 19L21 25L27 31" stroke="#333333" stroke-width="2"/>
             </svg>`,
-            nextArrow: `<svg class="next" width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            nextArrow: `<svg class="next" width="55" height="55" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle r="24.5" transform="matrix(-1 0 0 1 25 25)" fill="white" stroke="#E3E3E3"/>
             <path d="M23 19L29 25L23 31" stroke="#333333" stroke-width="2"/>
             </svg>
@@ -32,11 +32,11 @@ $(document).ready(function() {
     if ($(window).width() > 1200) {
         $('#thredSlider').slick({
             slidesToShow: 1,
-            prevArrow: `<svg class="prev" width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            prevArrow: `<svg class="prev" width="55" height="55" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="25" cy="25" r="24.5" fill="white" stroke="#E3E3E3"/>
             <path d="M27 19L21 25L27 31" stroke="#333333" stroke-width="2"/>
             </svg>`,
-            nextArrow: `<svg class="next" width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            nextArrow: `<svg class="next" width="55" height="55" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle r="24.5" transform="matrix(-1 0 0 1 25 25)" fill="white" stroke="#E3E3E3"/>
             <path d="M23 19L29 25L23 31" stroke="#333333" stroke-width="2"/>
             </svg>
@@ -46,11 +46,11 @@ $(document).ready(function() {
     } else {
         $('#thredMobileSlider').slick({
             slidesToShow: 1,
-            prevArrow: `<svg class="prev" width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            prevArrow: `<svg class="prev" width="55" height="55" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="25" cy="25" r="24.5" fill="white" stroke="#E3E3E3"/>
             <path d="M27 19L21 25L27 31" stroke="#333333" stroke-width="2"/>
             </svg>`,
-            nextArrow: `<svg class="next" width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            nextArrow: `<svg class="next" width="55" height="55" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle r="24.5" transform="matrix(-1 0 0 1 25 25)" fill="white" stroke="#E3E3E3"/>
             <path d="M23 19L29 25L23 31" stroke="#333333" stroke-width="2"/>
             </svg>
@@ -62,11 +62,11 @@ $(document).ready(function() {
         $('#secondSlider').slick({
             slidesToShow: 1,
             heigth: 100,
-            prevArrow: `<svg class="prev" width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            prevArrow: `<svg class="prev" width="55" height="55" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="25" cy="25" r="24.5" fill="white" stroke="#E3E3E3"/>
             <path d="M27 19L21 25L27 31" stroke="#333333" stroke-width="2"/>
             </svg>`,
-            nextArrow: `<svg class="next" width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            nextArrow: `<svg class="next" width="55" height="55" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle r="24.5" transform="matrix(-1 0 0 1 25 25)" fill="white" stroke="#E3E3E3"/>
             <path d="M23 19L29 25L23 31" stroke="#333333" stroke-width="2"/>
             </svg>
@@ -76,11 +76,11 @@ $(document).ready(function() {
     } else {
         $('#secondMobileSlider').slick({
             slidesToShow: 1,
-            prevArrow: `<svg class="prev" width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            prevArrow: `<svg class="prev" width="55" height="55" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="25" cy="25" r="24.5" fill="white" stroke="#E3E3E3"/>
             <path d="M27 19L21 25L27 31" stroke="#333333" stroke-width="2"/>
             </svg>`,
-            nextArrow: `<svg class="next" width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            nextArrow: `<svg class="next" width="55" height="55" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle r="24.5" transform="matrix(-1 0 0 1 25 25)" fill="white" stroke="#E3E3E3"/>
             <path d="M23 19L29 25L23 31" stroke="#333333" stroke-width="2"/>
             </svg>
@@ -104,11 +104,11 @@ $(document).ready(function() {
     }
     $('#firstEventSlider').slick({
         slidesToShow: 1,
-        prevArrow: `<svg class="prev" width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        prevArrow: `<svg class="prev" width="55" height="55" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="25" cy="25" r="24.5" fill="white" stroke="#E3E3E3"/>
             <path d="M27 19L21 25L27 31" stroke="#333333" stroke-width="2"/>
             </svg>`,
-        nextArrow: `<svg class="next" width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        nextArrow: `<svg class="next" width="55" height="55" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle r="24.5" transform="matrix(-1 0 0 1 25 25)" fill="white" stroke="#E3E3E3"/>
             <path d="M23 19L29 25L23 31" stroke="#333333" stroke-width="2"/>
             </svg>
@@ -117,11 +117,11 @@ $(document).ready(function() {
     });
     $('#secondEventSlider').slick({
         slidesToShow: 1,
-        prevArrow: `<svg class="prev" width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        prevArrow: `<svg class="prev" width="55" height="55" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="25" cy="25" r="24.5" fill="white" stroke="#E3E3E3"/>
             <path d="M27 19L21 25L27 31" stroke="#333333" stroke-width="2"/>
             </svg>`,
-        nextArrow: `<svg class="next" width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        nextArrow: `<svg class="next" width="55" height="55" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle r="24.5" transform="matrix(-1 0 0 1 25 25)" fill="white" stroke="#E3E3E3"/>
             <path d="M23 19L29 25L23 31" stroke="#333333" stroke-width="2"/>
             </svg>
@@ -130,11 +130,11 @@ $(document).ready(function() {
     });
     $('#thredEventSlider').slick({
         slidesToShow: 1,
-        prevArrow: `<svg class="prev" width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        prevArrow: `<svg class="prev" width="55" height="55" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="25" cy="25" r="24.5" fill="white" stroke="#E3E3E3"/>
             <path d="M27 19L21 25L27 31" stroke="#333333" stroke-width="2"/>
             </svg>`,
-        nextArrow: `<svg class="next" width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        nextArrow: `<svg class="next" width="55" height="55" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle r="24.5" transform="matrix(-1 0 0 1 25 25)" fill="white" stroke="#E3E3E3"/>
             <path d="M23 19L29 25L23 31" stroke="#333333" stroke-width="2"/>
             </svg>
@@ -150,11 +150,11 @@ $(document).ready(function() {
             if (!$('#mentorSlider').hasClass('slick-initialized')) {
                 $('mentorSlider').slick({
                     slidesToShow: 1,
-                    prevArrow: `<svg class="prev" width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    prevArrow: `<svg class="prev" width="55" height="55" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="25" cy="25" r="24.5" fill="white" stroke="#E3E3E3"/>
             <path d="M27 19L21 25L27 31" stroke="#333333" stroke-width="2"/>
             </svg>`,
-                    nextArrow: `<svg class="next" width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    nextArrow: `<svg class="next" width="55" height="55" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle r="24.5" transform="matrix(-1 0 0 1 25 25)" fill="white" stroke="#E3E3E3"/>
             <path d="M23 19L29 25L23 31" stroke="#333333" stroke-width="2"/>
             </svg>
@@ -188,11 +188,11 @@ $(document).ready(function() {
                 $('#secondMobileSlider').slick({
                     slidesToShow: 1,
                     heigth: 100,
-                    prevArrow: `<svg class="prev" width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    prevArrow: `<svg class="prev" width="55" height="55" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="25" cy="25" r="24.5" fill="white" stroke="#E3E3E3"/>
             <path d="M27 19L21 25L27 31" stroke="#333333" stroke-width="2"/>
             </svg>`,
-                    nextArrow: `<svg class="next" width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    nextArrow: `<svg class="next" width="55" height="55" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle r="24.5" transform="matrix(-1 0 0 1 25 25)" fill="white" stroke="#E3E3E3"/>
             <path d="M23 19L29 25L23 31" stroke="#333333" stroke-width="2"/>
             </svg>
@@ -267,11 +267,11 @@ $(document).ready(function() {
             if (!$(name).hasClass('slick-initialized')) {
                 $(name).slick({
                     slidesToShow: 1,
-                    prevArrow: `<svg class="prev" width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    prevArrow: `<svg class="prev" width="55" height="55" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="25" cy="25" r="24.5" fill="white" stroke="#E3E3E3"/>
             <path d="M27 19L21 25L27 31" stroke="#333333" stroke-width="2"/>
             </svg>`,
-                    nextArrow: `<svg class="next" width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    nextArrow: `<svg class="next" width="55" height="55" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle r="24.5" transform="matrix(-1 0 0 1 25 25)" fill="white" stroke="#E3E3E3"/>
             <path d="M23 19L29 25L23 31" stroke="#333333" stroke-width="2"/>
             </svg>
@@ -284,11 +284,11 @@ $(document).ready(function() {
             if (!$(nameMob).hasClass('slick-initialized')) {
                 $(nameMob).slick({
                     slidesToShow: 1,
-                    prevArrow: `<svg class="prev" width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    prevArrow: `<svg class="prev" width="55" height="55" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="25" cy="25" r="24.5" fill="white" stroke="#E3E3E3"/>
             <path d="M27 19L21 25L27 31" stroke="#333333" stroke-width="2"/>
             </svg>`,
-                    nextArrow: `<svg class="next" width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    nextArrow: `<svg class="next" width="55" height="55" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle r="24.5" transform="matrix(-1 0 0 1 25 25)" fill="white" stroke="#E3E3E3"/>
             <path d="M23 19L29 25L23 31" stroke="#333333" stroke-width="2"/>
             </svg>
@@ -350,7 +350,7 @@ $(document).ready(function() {
                     $('.connect-card-text').css({ "opacity": "1" });
                 }, 3500)
                 setTimeout(function() {
-                    $('.connect-card img').slideDown();
+                    $('.connect-card img').css({ "-webkit-transform": "translateY(0)" });
                 }, 4000)
                 setTimeout(function() {
                     $(lk).addClass('done');

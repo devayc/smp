@@ -298,7 +298,7 @@ section {
 }
 
 .task-title {
-    margin-bottom: 60px;
+    margin-bottom: 100px;
 }
 
 .connect-card-text {
@@ -361,7 +361,7 @@ section {
 
 .grey-con {
     background: #F1F1F1;
-    padding: 100px 0;
+    padding: 1px 0;
 }
 
 .work-format {
@@ -413,7 +413,7 @@ section {
 }
 
 .header-btn:hover {
-    background-image: url(../image/btn1-hover.png);
+    background-image: url(../image/btn-hover-1.png);
     color: #FFFFFF;
 }
 
@@ -522,15 +522,15 @@ section {
     /* width: 20px;
     height: 20px; */
     z-index: 4;
-    bottom: 1vw;
+    bottom: 2vw;
 }
 
 .prev {
-    right: 5vw;
+    right: 6vw;
 }
 
 .next {
-    right: 1vw;
+    right: 2vw;
 }
 
 .work-line {
@@ -589,7 +589,7 @@ section {
 }
 
 #secondSlider .prev {
-    right: -46vw;
+    right: -47vw;
 }
 
 #secondSlider .next {
@@ -699,8 +699,23 @@ section {
     overflow: hidden;
 } */
 
+.line-conent-container {
+    overflow: hidden;
+    text-align: center;
+}
+
+.line-conent-container img {
+    width: 99%;
+}
+
+.connect-card img {
+    transform: translateY(-110%);
+    transition: 2s;
+}
+
 .event-container {
     height: 100vh;
+    margin-bottom: 40px;
     position: relative;
     background-color: #FFFFFF;
     border: 1px solid #CDCDCD;
@@ -793,14 +808,14 @@ section {
     min-height: auto;
 }
 
-#format .next:hover circle,
-#format .prev:hover circle {
+.next:hover circle,
+.prev:hover circle {
     stroke: rgba(65, 129, 255, 1);
     fill: rgba(65, 129, 255, 1)
 }
 
-#format .next:hover path,
-#format .prev:hover path {
+.next:hover path,
+.prev:hover path {
     stroke: #FFFFFF;
 }
 
@@ -983,6 +998,9 @@ footer p,
 @media(max-width:1500px) {
     .prev {
         right: 7vw;
+    }
+    #secondSlider .prev {
+        right: -46vw;
     }
 }
 
