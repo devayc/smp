@@ -1005,9 +1005,6 @@ footer p,
 }
 
 @media(max-width:1199px) {
-    .anons-back {
-        height: 970px;
-    }
     .format-card {
         padding-bottom: 40px;
     }
