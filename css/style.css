@@ -785,6 +785,14 @@ section {
     text-align: center;
 }
 
+.anons .row {
+    min-height: 360px;
+}
+
+.footer-links .row {
+    min-height: auto;
+}
+
 #format .next:hover circle,
 #format .prev:hover circle {
     stroke: rgba(65, 129, 255, 1);
@@ -979,6 +987,9 @@ footer p,
 }
 
 @media(max-width:1199px) {
+    .anons-back {
+        height: 970px;
+    }
     .format-card {
         padding-bottom: 40px;
     }

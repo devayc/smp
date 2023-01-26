@@ -214,7 +214,6 @@ $(document).ready(function() {
     let block_show8 = null;
     let block_show9 = null
     let block_show10 = null
-    let block_show11 = null
     let block_show12 = null
     let block_show13 = null
     $(window).scroll(function(event) {
@@ -230,7 +229,9 @@ $(document).ready(function() {
         scrollTracking7('#net')
         scrollTracking8('#events')
         scrollTracking9('#anons')
-        scrollTracking10('#footer')
+        if ($('#sovet').hasClass('done')) {
+            scrollTracking10('#footer')
+        }
         scrollTracking12('#partner')
         scrollTracking13('#sovet')
     });
@@ -587,6 +588,9 @@ $(document).ready(function() {
                     time += 500
 
                 })
+                setTimeout(function() {
+                    $(lk).addClass('done');
+                }, 4000)
                 block_show13 = true;
             }
 
