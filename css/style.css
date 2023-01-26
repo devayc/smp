@@ -112,9 +112,13 @@ header {
     /* position: relative; */
 }
 
+.location-con {
+    text-align: right;
+}
+
 .btn-block {
     padding: 10% 13%;
-    font-size: clamp(14px, 1vw, 36px);
+    font-size: clamp(12px, 0.8vw, 20px);
     position: relative;
     z-index: 2;
     background: url(../image/button.png);
@@ -141,12 +145,17 @@ h1 {
     letter-spacing: -0.02em;
     color: #FFFFFF;
     margin-bottom: 4%;
-    font-size: clamp(30px, 4vw, 148px)
+    font-size: clamp(30px, 4vw, 148px);
+    display: none;
 }
 
 .logo {
     width: 100%;
     max-width: 250px;
+}
+
+.header-content__left-part .sub-title {
+    display: none;
 }
 
 .sub-title {
@@ -246,25 +255,28 @@ section {
     margin-bottom: 17px;
 }
 
+.format-card-ment {
+    padding-left: 50px;
+}
+
 .card-text {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
     color: #333333;
-    font-size: clamp(14px, 1vw, 33px);
+    font-size: clamp(14px, .8vw, 28px);
 }
 
 .task-card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 100%;
     height: 100%;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center center;
-    padding: 9% 7% 9% 7%;
+    padding: 9%;
     opacity: 0;
     transition: all 1s;
 }
@@ -403,7 +415,6 @@ section {
 .header-btn:hover {
     background-image: url(../image/btn1-hover.png);
     color: #FFFFFF;
-    padding: 10% 13%;
 }
 
 .header-btn:hover input {
@@ -423,10 +434,6 @@ section {
 .sovet h2,
 .our-partners h2 {
     margin: 50px;
-}
-
-.header-content__left-part {
-    display: none;
 }
 
 .format-card {
@@ -515,15 +522,15 @@ section {
     /* width: 20px;
     height: 20px; */
     z-index: 4;
-    bottom: 2vw;
+    bottom: 1vw;
 }
 
 .prev {
-    right: 8vw;
+    right: 5vw;
 }
 
 .next {
-    right: 3vw;
+    right: 1vw;
 }
 
 .work-line {
@@ -684,17 +691,19 @@ section {
     height: 100%;
 }
 
-.event-containers {
+
+/* .event-containers {
     height: 100vh;
     position: relative;
     background-color: #FFFFFF;
     overflow: hidden;
-}
+} */
 
 .event-container {
     height: 100vh;
     position: relative;
     background-color: #FFFFFF;
+    border: 1px solid #CDCDCD;
 }
 
 
@@ -889,6 +898,11 @@ footer p,
     color: #FFFFFF;
 }
 
+.footer-link:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
 .slick-slide {
     /* max-height: 573px; */
 }
@@ -946,13 +960,31 @@ footer p,
     display: table;
 }
 
+#sovet .row .col-xl-4,
+.our-partners .row .col-xl-4 {
+    transition: 1s ease;
+    opacity: 0;
+}
+
 @media(min-width:2400px) {
     .event-data {
         transform: scale(2) translate(21%, 0);
     }
 }
 
+@media(max-width:1500px) {
+    .prev {
+        right: 7vw;
+    }
+}
+
 @media(max-width:1199px) {
+    .format-card {
+        padding-bottom: 40px;
+    }
+    .format-card-ment {
+        padding-left: 0px;
+    }
     /* .grey-con {
             padding: 0;
         } */
@@ -981,6 +1013,9 @@ footer p,
     }
     .location {
         margin-top: 20px;
+    }
+    .location-con {
+        text-align: center;
     }
     .line {
         border-left: none;
@@ -1029,6 +1064,9 @@ footer p,
     .format-card .icon-card {
         margin-bottom: 30px;
     }
+    .task-card {
+        margin-bottom: 20px;
+    }
 }
 
 @media(max-width:996px) {
@@ -1062,11 +1100,25 @@ footer p,
 }
 
 @media(max-width:576px) {
+    .header-content__right-part {
+        justify-content: flex-start;
+    }
     .grey-con {
         padding-bottom: 0;
     }
     .task-title {
         font-size: 37px;
+    }
+    .mentor-card-txt {
+        margin-left: 30px;
+    }
+    .mentor-name,
+    .mentor-job {
+        text-align: left;
+    }
+    .mentor-avatar img {
+        width: 95px;
+        height: 95px;
     }
 }
 
