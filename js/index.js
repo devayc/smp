@@ -309,7 +309,6 @@ $(document).ready(function() {
 
         if (wt + wh >= et && wt + wh - eh * 2 <= et + (wh - eh)) {
             if (block_show == null || block_show == false) {
-                console.log('Блок active в области видимости');
                 $('#tast').animate({ opacity: 1, }, 1000);
                 $('#tast').css({ "-webkit-transform": "translate(0, 0px)" });
                 let time = 500
@@ -336,7 +335,6 @@ $(document).ready(function() {
 
         if (wt + wh >= et && wt + wh - eh * 2 <= et + (wh - eh)) {
             if (block_show2 == null || block_show2 == false) {
-                console.log('Блок active в области видимости');
                 $(lk).animate({ opacity: 1, }, 1000);
                 $(lk).css({ "-webkit-transform": "translate(0, 0px)" });
                 block_show2 = true;
@@ -370,7 +368,6 @@ $(document).ready(function() {
 
         if (wt + wh >= et && wt + wh - eh * 2 <= et + (wh - eh)) {
             if (block_show3 == null || block_show3 == false) {
-                console.log('Блок active в области видимости');
                 $(lk).animate({ opacity: 1, }, 1000);
                 $(lk).css({ "-webkit-transform": "translate(0, 0px)" });
                 block_show3 = true;
@@ -391,7 +388,6 @@ $(document).ready(function() {
 
         if (wt + wh >= et && wt + wh - eh * 2 <= et + (wh - eh)) {
             if (block_show4 == null || block_show4 == false) {
-                console.log('Блок active в области видимости');
                 setTimeout(function() {
                     $('.invite-container').css({ "opacity": "1" });
                 }, 500)
@@ -410,7 +406,6 @@ $(document).ready(function() {
 
         if (wt + wh >= et && wt + wh - eh * 2 <= et + (wh - eh)) {
             if (block_show5 == null || block_show5 == false) {
-                console.log('Блок active в области видимости');
                 setTimeout(function() {
                     $('.network-con .format-card').css({ "opacity": "1" });
                 }, 1500)
@@ -433,7 +428,6 @@ $(document).ready(function() {
 
         if (wt + wh >= et && wt + wh - eh * 2 <= et + (wh - eh)) {
             if (block_show6 == null || block_show6 == false) {
-                console.log('Блок active в области видимости');
                 $(lk).animate({ opacity: 1, }, 1000);
                 $(lk).css({ "-webkit-transform": "translate(0, 0px)" });
                 setTimeout(function() {
@@ -462,7 +456,6 @@ $(document).ready(function() {
 
         if (wt + wh >= et && wt + wh - eh * 2 <= et + (wh - eh)) {
             if (block_show7 == null || block_show7 == false) {
-                console.log('Блок active в области видимости');
                 $(lk).animate({ opacity: 1, }, 1000);
                 setTimeout(function() {
                     $('#net').css({ "opacity": "1" });;
@@ -490,7 +483,6 @@ $(document).ready(function() {
 
         if (wt + wh >= et && wt + wh - eh * 2 <= et + (wh - eh)) {
             if (block_show8 == null || block_show8 == false) {
-                console.log('Блок active в области видимости');
                 $(lk).animate({ opacity: 1, }, 1000);
                 $(lk).css({ "-webkit-transform": "translate(0, 0px)" });
                 block_show8 = true;
@@ -508,7 +500,6 @@ $(document).ready(function() {
 
         if (wt + wh >= et && wt + wh - eh * 2 <= et + (wh - eh)) {
             if (block_show9 == null || block_show9 == false) {
-                console.log('Блок active в области видимости');
                 $(lk).animate({ opacity: 1, }, 1000);
                 setTimeout(function() {
                     $('#anons .anons-card').slideDown();
@@ -528,7 +519,6 @@ $(document).ready(function() {
 
         if (wt + wh >= et && wt + wh - eh * 2 <= et + (wh - eh)) {
             if (block_show10 == null || block_show10 == false) {
-                console.log('Блок active в области видимости');
                 $('#footer').animate({ opacity: 1, }, 1000);
                 setTimeout(function() {
                     $('#footer .anons-card').slideDown();
@@ -548,7 +538,6 @@ $(document).ready(function() {
 
         if (wt + wh >= et && wt + wh - eh * 2 <= et + (wh - eh)) {
             if (block_show12 == null || block_show12 == false) {
-                console.log('Блок active в области видимости');
                 $(lk).animate({ opacity: 1, }, 1000);
                 $(lk).css({ "-webkit-transform": "translate(0, 0px)" });
                 let time = 2000
@@ -556,7 +545,7 @@ $(document).ready(function() {
                     setTimeout(function() {
                         $(i).css({ "opacity": "1" });
                     }, time)
-                    console.log(i)
+
                     time += 500
 
                 })
@@ -576,7 +565,6 @@ $(document).ready(function() {
 
         if (wt + wh >= et && wt + wh - eh * 2 <= et + (wh - eh)) {
             if (block_show13 == null || block_show13 == false) {
-                console.log('Блок active в области видимости');
                 $(lk).animate({ opacity: 1, }, 1000);
                 $(lk).css({ "-webkit-transform": "translate(0, 0px)" });
                 let time = 2000
@@ -584,7 +572,7 @@ $(document).ready(function() {
                     setTimeout(function() {
                         $(i).css({ "opacity": "1" });
                     }, time)
-                    console.log(i)
+
                     time += 500
 
                 })
@@ -601,7 +589,6 @@ $(document).ready(function() {
     let x = 0
     $(document).scroll(function() {
         let distance = document.getElementById("slide2").getBoundingClientRect();
-        console.log(distance)
         if (distance.top < 0) {
             $('#slide2').addClass('banner-wrapper')
         }
@@ -609,6 +596,10 @@ $(document).ready(function() {
             $('#slide2').removeClass('banner-wrapper')
         }
     })
+    $('.item').each(function(e) {
+        $(this).css({ "display": "block" });
+    })
+
 
     //     if (distance.top <= -1 && x == 0) {
     //         $('body').css({ "overflow": "hidden" });

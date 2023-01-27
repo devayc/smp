@@ -117,7 +117,7 @@ header {
 }
 
 .btn-block {
-    padding: 10% 13%;
+    padding: 10% 9%;
     font-size: clamp(12px, 0.8vw, 20px);
     position: relative;
     z-index: 2;
@@ -598,11 +598,12 @@ section {
 
 #secondSlider .prev,
 #secondSlider .next {
-    bottom: -1vw;
+    bottom: 0;
 }
 
 .mentor-avatar {
     border-radius: 50%;
+    margin-bottom: 15px;
 }
 
 .mentor-job {
@@ -850,6 +851,10 @@ section {
     background-color: #FFFFFF;
     padding: 15% 12%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .anons-card h3 {
@@ -867,7 +872,7 @@ section {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
-    font-size: 25px;
+    font-size: clamp(18px, 2vw, 25px);
     line-height: 146%;
     color: #FFFFFF;
 }
@@ -881,7 +886,7 @@ section {
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
-    font-size: clamp(18px, 2vw, 45px);
+    font-size: clamp(25px, 2vw, 45px);
     line-height: 146%;
     text-decoration-line: underline;
     color: #FFFFFF;
@@ -996,6 +1001,9 @@ footer p,
 }
 
 @media(max-width:1500px) {
+    .format-card {
+        padding-left: 15px;
+    }
     .prev {
         right: 7vw;
     }
@@ -1005,6 +1013,9 @@ footer p,
 }
 
 @media(max-width:1199px) {
+    .task-title {
+        margin-bottom: 80px;
+    }
     .format-card {
         padding-bottom: 40px;
     }
@@ -1066,8 +1077,8 @@ footer p,
     .work-formate-slider .prev,
     .work-formate-slider .next {
         top: 45%;
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
     }
     .slider-mob .next {
         right: 2%;
@@ -1096,6 +1107,9 @@ footer p,
 }
 
 @media(max-width:996px) {
+    .work-format__sub-title {
+        font-size: 21px;
+    }
     footer .row .col-md-4:first-child {
         text-align: center;
     }
@@ -1123,12 +1137,12 @@ footer p,
     .event-btn {
         padding: 10% 10%;
     }
-}
-
-@media(max-width:576px) {
     .header-content__right-part {
         justify-content: flex-start;
     }
+}
+
+@media(max-width:576px) {
     .grey-con {
         padding-bottom: 0;
     }
@@ -1162,6 +1176,12 @@ footer p,
     }
     .event-btn {
         padding: 5% 7%;
+    }
+    h1 {
+        font-size: 45px;
+    }
+    .sub-title {
+        font-size: 27px;
     }
 }
 
