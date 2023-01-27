@@ -1018,9 +1018,13 @@ footer p,
     }
     .format-card {
         padding-bottom: 40px;
+        padding-left: 0;
     }
     .format-card-ment {
         padding-left: 0px;
+    }
+    .mentor-card {
+        margin: 0;
     }
     /* .grey-con {
             padding: 0;
