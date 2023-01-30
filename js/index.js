@@ -345,6 +345,9 @@ $(document).ready(function() {
                     $('.line').css({ "height": "101px" });
                 }, 3000)
                 setTimeout(function() {
+                    $('.line-2').css({ "height": "101px" });
+                }, 3000)
+                setTimeout(function() {
                     $('.connect-card-text').css({ "opacity": "1" });
                 }, 3500)
                 setTimeout(function() {

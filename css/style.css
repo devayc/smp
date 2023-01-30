@@ -145,7 +145,7 @@ h1 {
     letter-spacing: -0.02em;
     color: #FFFFFF;
     margin-bottom: 4%;
-    font-size: clamp(30px, 4vw, 148px);
+    font-size: clamp(33px, 4vw, 148px);
     display: none;
 }
 
@@ -164,7 +164,7 @@ h1 {
     font-weight: 400;
     line-height: 130%;
     color: #FFFFFF;
-    font-size: clamp(18px, 2vw, 60px)
+    font-size: clamp(20px, 2vw, 60px)
 }
 
 .header-content {
@@ -247,7 +247,7 @@ section {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
-    font-size: clamp(23px, 2vw, 70px);
+    font-size: clamp(22px, 2vw, 70px);
     line-height: 105%;
     /* or 31px */
     /* черный */
@@ -326,8 +326,15 @@ section {
 }
 
 .line {
-    border-left: 1px solid #CDCDCD;
     border-right: 1px solid #CDCDCD;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    transition: all 1s;
+}
+
+.line-2 {
+    border-left: 1px solid #CDCDCD;
     position: absolute;
     width: 100%;
     height: 0;
@@ -736,7 +743,7 @@ section {
 }
 
 .events__title {
-    margin-bottom: 35px;
+    margin-bottom: 60px;
 }
 
 .event-data {
@@ -844,7 +851,7 @@ section {
 
 #footer .anons {
     padding: 75px 5% 30px 5%;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .anons-card {
@@ -872,7 +879,7 @@ section {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
-    font-size: clamp(18px, 2vw, 25px);
+    font-size: clamp(16px, 2vw, 25px);
     line-height: 146%;
     color: #FFFFFF;
 }
@@ -886,7 +893,7 @@ section {
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
-    font-size: clamp(25px, 2vw, 45px);
+    font-size: clamp(35px, 2vw, 45px);
     line-height: 146%;
     text-decoration-line: underline;
     color: #FFFFFF;
@@ -1010,9 +1017,16 @@ footer p,
     #secondSlider .prev {
         right: -46vw;
     }
+    .mentor-name {
+        font-size: 25px;
+    }
 }
 
 @media(max-width:1199px) {
+    .task-card img {
+        width: 40px;
+        height: 40px;
+    }
     .task-title {
         margin-bottom: 80px;
     }
@@ -1108,6 +1122,12 @@ footer p,
     .task-card {
         margin-bottom: 20px;
     }
+    .header-content__right-part {
+        justify-content: flex-start;
+    }
+    .header-content__left-part {
+        margin-bottom: 20px;
+    }
 }
 
 @media(max-width:996px) {
@@ -1140,9 +1160,6 @@ footer p,
     }
     .event-btn {
         padding: 10% 10%;
-    }
-    .header-content__right-part {
-        justify-content: flex-start;
     }
 }
 
