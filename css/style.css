@@ -1095,8 +1095,8 @@ footer p,
     .work-formate-slider .prev,
     .work-formate-slider .next {
         top: 45%;
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
     }
     .slider-mob .next {
         right: 2%;
