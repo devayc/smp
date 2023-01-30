@@ -873,7 +873,7 @@ section {
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
-    font-size: clamp(28px, 2vw, 60px);
+    font-size: clamp(35px, 2vw, 60px);
     line-height: 110%;
     text-align: center;
     color: #333333;
